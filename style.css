@@ -9,8 +9,21 @@ body{
   background-color: rgba(204, 221, 245, 1);
 background-image: linear-gradient(148deg, rgba(204, 221, 245, 1) 19%, rgba(170, 204, 247, 1) 50%, rgba(224, 236, 253, 1) 87%);
 overflow-y: hidden;
-}
 
+}
+@media screen and (max-width:400px){
+  body{
+    height: 844px;
+    background-color: brown;
+    
+    overflow-y: visible;
+    overflow-x: hidden;
+  }
+  .background{
+    background-image:none;
+    height: 844px;
+  }
+}
   .mainphoto{
     height: 820px;
     width: auto;
@@ -19,11 +32,21 @@ overflow-y: hidden;
     margin-left: 500px;
     
 }
+@media screen and (max-width:400px) {
+  .mainphoto{
+    
+    height: 390px;
+    margin-top:10px;
+    margin-left: 0px;
+  }
+ 
+  
+}
 .background{
 background-image: url(123.png);
 background-repeat: repeat;
 background-position: center;
-height: 1000px;
+
 }
 .btn {
 position: relative;
@@ -43,6 +66,15 @@ border-radius: 20px;
   .btn:hover {
 background-color: rgba(255, 255, 255, 0.822);
   }
+@media screen and (max-width:400px) {
+  .btn{
+    width: 100%;
+    border-radius: 0;
+    display: auto;
+    margin-top: 200px;
+  }
+  
+}
   
   
 .sidenav {
@@ -140,10 +172,31 @@ background-color: #e0ecfd;
   
   text-align: center;
   font-size: 25px;
-  margin-top: -66px;
+  margin-top: -86px;
 }
 .text2{
   text-align: center;
   font-size: 25px;
   margin-top: 40px;
+}
+.text3{
+  font-family: 'Hurricane', cursive;
+  font-size: 60px;
+  color: black;
+  text-decoration: none;
+}
+@media screen and (max-width:400px) {
+  .text{
+    font-size: 16px;
+    
+  }
+  .text2{
+    font-size: 16px;
+  }
+  .text3{
+    font-size: 50px;
+  }
+  .contenerR{
+    margin-top: 10px;
+  }
 }
